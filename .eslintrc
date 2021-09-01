@@ -1,0 +1,50 @@
+{
+  "extends": "thinkmobiles",
+  "globals": {
+    "App": true,
+    "FlurryAgent": true,
+    "String": true,
+    "sinon": true
+  },
+  "rules": {
+    "no-trailing-spaces": [
+      "error",
+      {
+        "skipBlankLines": true
+      }
+    ],
+    "key-spacing": [
+      "error",
+      {
+        "align": "colon"
+      }
+    ],
+    "no-shadow": [
+      2,
+      {
+        "hoist": "never"
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "default-case": [
+      "error",
+      {
+        "commentPattern": "^skip\\sdefault"
+      }
+    ],
+    "no-extend-native": [
+      "error",
+      {
+        "exceptions": [
+          "Object",
+          "Date"
+        ]
+      }
+    ]
+  }
+}
